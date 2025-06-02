@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tent Rental Services</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Tent Rental Services</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Book Your Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cta">
+    <h2>Book Your Order Now for Weddings & Events</h2>
+    <p>We provide tents, sofas, crockery, lights, and complete setup at your doorstep.</p>
+    <a href="#contact" class="cta-button">Book Now</a>
+  </section>
+
+  <section id="services">
+    <h2>Wedding Services We Provide</h2>
+    <div class="service-grid">
+      <div class="service-item">
+        <img src="images/tent1.jpg" alt="Wedding Tent">
+        <p>Luxury Wedding Tents</p>
+      </div>
+      <div class="service-item">
+        <img src="images/tent2.jpg" alt="Decorated Hall Tent">
+        <p>Decorated Tent Interiors</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Book Your Order Now</h2>
+    <form action="https://formspree.io/f/your_form_id" method="POST">
+      <label>Your Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" name="phone" required>
+
+      <label>Required Services:</label>
+      <select name="services[]" multiple size="6" required>
+        <option value="Wedding Tent">Wedding Tent</option>
+        <option value="Chairs and Sofas">Chairs and Sofas</option>
+        <option value="Crockery">Crockery</option>
+        <option value="Lighting and Decoration">Lighting and Decoration</option>
+        <option value="Stage and Backdrop">Stage and Backdrop</option>
+        <option value="Cooling or Heating">Cooling or Heating</option>
+      </select>
+
+      <label>Number of Guests:</label>
+      <input type="number" name="guests" placeholder="e.g. 300" required>
+
+      <label>Event Date:</label>
+      <input type="date" name="event_date" required>
+
+      <label>Address:</label>
+      <textarea name="address" rows="2" placeholder="Full delivery address"></textarea>
+
+      <label>Any Additional Notes:</label>
+      <textarea name="message" rows="3"></textarea>
+
+      <button type="submit">Book Your Order Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tent Rental Services. All rights reserved.</p>
+  </footer>
+
+  <section class="contact-info">
+    <h2>Contact Us Directly</h2>
+    <p>Have questions? Chat with us on WhatsApp or find us on the map below.</p>
+    <a class="whatsapp-button" href="https://wa.me/923001234567" target="_blank">
+      Chat on WhatsApp
+    </a>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+</body>
+</html>
